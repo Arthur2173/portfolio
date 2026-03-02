@@ -1,87 +1,13 @@
-@media screen and (max-width: 600px) {
-  body {
-    padding: 0 15px;
-    font-size: 15px;
-    line-height: 1.4;
-  }
-
-  .container-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Estilo padrão = celular */
+.container {
     width: 100%;
-  }
+    padding: 1rem;
+}
 
-  .heading {
-    text-align: center;
-    padding: 10px 0;
-    margin-bottom: 10px;
-    flex-direction: column;
-  }
-
-  .logo {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .menu {
-    display: none; /* Menu oculto em telas pequenas */
-  }
-
-  .conteudo,
-  .conteudo-projetos-habilidades,
-  .formacao,
-  .habilidades,
-  .projetos,
-  .sobre-mim {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .sobre-mim p,
-  .habilidades ul,
-  .formacao p {
-    text-align: justify;
-  }
-
-  .curriculo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    width: 100%;
-  }
-
-  .curriculo a {
-    display: block;
-    background-color: #0088A9;
-    color: white;
-    text-decoration: none;
-    padding: 15px 25px;
-    font-size: 16px;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px 0;
-  }
-
-  h1, h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  ul {
-    padding-left: 20px;
-  }
-
-  li {
-    margin-bottom: 5px;
-  }
+/* A partir de 768px (tablet / desktop) */
+@media (min-width: 768px) {
+    .container {
+        width: 700px;
+        margin: 0 auto;
+    }
 }
