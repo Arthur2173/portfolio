@@ -1,13 +1,12 @@
-/* Estilo padrão = celular */
-.container {
-    width: 100%;
-    padding: 1rem;
-}
+@media (max-width: 768px) {
 
-/* A partir de 768px (tablet / desktop) */
-@media (min-width: 768px) {
-    .container {
-        width: 700px;
-        margin: 0 auto;
+    .section {
+        flex-direction: column;
+        gap: 2rem;
     }
+
+    .section > div {
+        width: 100%;
+    }
+
 }
